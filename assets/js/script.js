@@ -1,7 +1,7 @@
 $(document).ready(function() {
 	// Declare variable
-	var breakTime;
-	var sessionTime;
+	var breakTime = 05;
+	var sessionTime = 25;
 	var tone = $("#buzzer")[0];
 	var sec = 60;
 
