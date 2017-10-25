@@ -1,0 +1,63 @@
+* {
+	padding: 0;
+	margin: 0;
+	border: 0;
+}
+
+body {
+	background-color: #222D32;
+}
+
+.stateText {
+	padding-top: 30px;
+	color: #757575;
+	font-size: 1rem;
+}
+
+.state span {
+	font-size: 2rem;
+	color: #fff;
+}
+
+input {
+	text-align: center;
+	margin: auto;
+	color: white;
+}
+
+.b a {
+	font-size: 0.9rem;
+	padding: 0 15px;
+	font-weight: 900;
+}
+
+.clockBorder {
+	display: inline-block;
+	border-radius: 50%;
+	border: 3px solid #26a69a;
+	height: 200px;
+	width: 200px;
+	margin-top: 50px;
+	line-height: 200px;
+}
+
+.time {
+	font-size: 2rem;
+	color: #fff;
+}
+
+.bottom {
+	margin: 100px 0 20px 0;
+}
+
+.hide {
+	display: none;
+}
+
+.stop {
+	background-color: #E53935;
+}
+
+.stop:hover {
+	background-color: #E53935;
+}

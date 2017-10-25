@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>pomodoroClock</title>
+	<link rel="stylesheet" href="assets/css/materialize.min.css">
+	<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+	<audio id="buzzer" src="https://res.cloudinary.com/vinaypuppal/video/upload/v1466482181/completed_tone.mp3" type="audio/mpeg"></audio>
+	<div id="wrapper">
+		<div class="state center">
+			<div class="stateText">CURRENT STATE</div>
+			<span class="status">WORK</span>
+		</div>
+		<div class="timingSection">
+			<div class="container">
+				<div class="row">
+					<div class="col l2 m2 xl2 "></div>
+					<div class="col l2 m2 xl2 s4 center">
+						<div class="input">
+							<input type="text" placeholder="BREAK (mm)" class="BREAK">
+						</div>
+						<div class="b">
+							<a class="waves-effect waves-light btn breakSet">SET</a>
+						</div>
+					</div>
+					<div class="col l4 m4 xl4"></div>
+					<div class="col l2 m2 xl2 s4 center">
+						<div class="input">
+							<input type="text" placeholder="SESSION (mm)" class="SESSION">
+						</div>
+						<div class="b">
+							<a class="waves-effect waves-light btn sessionSet">SET</a>
+						</div>
+					</div>
+					<div class="col l2 m2 xl2"></div>
+				</div>
+			</div>
+		</div>
+		<div class="mainClock center">
+			<div class="clockBorder">
+				<div class="clock">
+					<div class="time">
+						<span class="min">00</span>
+						:
+						<span class="sec">00</span>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="bottom center">
+			<a class="waves-effect waves-light btn-large start">START</a>
+		</div>
+	</div>
+
+	<script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+	<script src="assets/js/materialize.min.js"></script>
+	<script src="assets/js/script.js"></script>
+</body>
+</html>
