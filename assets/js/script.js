@@ -9,12 +9,20 @@ $(document).ready(function() {
 	// Set break time value
 	$(".breakSet").click(function() {
 		breakTime = $(".BREAK").val();
+		if(!breakTime){
+			alert("Enter \"Break\" Time");
+		}
 	});
 
 	// Set working time value
 	$(".sessionSet").click(function() {
 		sessionTime = $(".SESSION").val();
-		$(".min").html(sessionTime);
+		if(!breakTime){
+			alert("Enter \"Session\" Time");
+		}else{
+			$(".min").html(sessionTime);
+		}
+		
 	});
 
 	// Session starting function
@@ -86,6 +94,11 @@ $(document).ready(function() {
 
 	// Start Countdown
 	$(".start").click(function(){
-		startSessionTime();
+		if(!sessionTime){
+			alert("Please set the \"Session Time\" & the \"Break Time\".");
+		} else{
+			startSessionTime();
+			console.log(sessionTime);
+		}
 	});
 });
