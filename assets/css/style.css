@@ -61,3 +61,7 @@ input {
 .stop:hover {
 	background-color: #E53935;
 }
+
+.disabled {
+	background-color: #F44336;
+}

@@ -100,5 +100,6 @@ $(document).ready(function() {
 			startSessionTime();
 			console.log(sessionTime);
 		}
+		$(".start").addClass("disabled");
 	});
 });
