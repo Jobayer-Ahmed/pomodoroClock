@@ -99,7 +99,7 @@ $(document).ready(function() {
 		} else{
 			startSessionTime();
 			console.log(sessionTime);
+			$(".start").addClass("disabled");
 		}
-		$(".start").addClass("disabled");
 	});
 });
