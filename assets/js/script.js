@@ -45,6 +45,7 @@ $(document).ready(function() {
 				if(sessionTime === -1) {
 					tone.play();
 					clearInterval(sessionCounter);
+					alert("Working Time Is Over. Break Time Start");
 					startBreakTime();
 					
 				};
@@ -81,6 +82,7 @@ $(document).ready(function() {
 					$(".time").html("00 : 00");		
 					tone.play();
 					clearInterval(breakCounter);
+					alert("Your Break Time Is Over. Do You Wanna Start Work Again?");
 				};
 			};
 			if (sec < 10) {
